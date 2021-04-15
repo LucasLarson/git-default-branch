@@ -1,0 +1,23 @@
+git default-branch
+------------------
+
+🌳 What’s in a name? It doesn’t matter.
+
+https://github.com/LucasLarson/git-default-branch/actions?query=workflow:Super-Linter[image:https://img.shields.io/github/workflow/status/LucasLarson/git-default-branch/Super-Linter?logo=GitHub&label=Super-Linter[GitHub
+Super-Linter,title="GitHub Super-Linter status"]]
+https://github.com/LucasLarson/git-default-branch/blob/main/license.adoc[image:https://img.shields.io/badge/license-AGPL_3+-blue[AGPL,title="GNU
+Affero General Public License v3.0 or later"]]
+
+What
+~~~~
+During the course of versioning software history, a myriad of names have been
+used as the default for the chief branch, including `trunk`, `development`,
+`develop`, `dev`, `master`, `main`, `mainline`, `baseline`, and sometimes even
+`default`.
+
+Why
+~~~
+Finding Oh My Zsh’s heuristic insufficient (Oh My Zsh decides the default
+branch is named `main` if that branch exists, otherwise they assume it’s
+`master`), I created this script to more quickly and more accurately ascertain
+this information.

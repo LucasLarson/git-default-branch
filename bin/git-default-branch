@@ -1,0 +1,52 @@
+#!/usr/bin/env sh
+#
+#     git default-branch
+#     🌳  What’s in a name? It doesn’t matter.
+#
+#     author: Lucas Larson
+#     URL: https://github.com/LucasLarson/git-default-branch
+#     license: GNU Affero General Public License v3.0 or later
+#
+# return the name of a repository’s default branch
+git_default_branch() {
+  [ "${1}" = -v ] || [ "${1}" = --verbose ] && set -x
+
+  # if we’re not in a Git repository, we want to set our own error message
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+
+    # check if there’s a `remote` with a default branch and
+    # if so, then use that name for `default_branch`
+    # https://stackoverflow.com/a/44750379
+    if git symbolic-ref refs/remotes/origin/HEAD >/dev/null 2>&1; then
+      default_branch=$(git symbolic-ref refs/remotes/origin/HEAD |
+        sed 's@^refs/remotes/origin/@@')
+
+    # check for `main`, which, if it exists, is most likely to be default
+    elif [ -n "$(git branch --list main)" ]; then
+      default_branch=main
+
+    # check for a branch called `master`
+    elif [ -n "$(git branch --list master)" ]; then
+      default_branch=master
+
+    else
+      # fail with explanation
+      printf 'unable to detect a \x60main\x60, \x60master\x60, or default '
+      printf 'branch in this repository\n'
+      return 2
+    fi
+
+    # return the result
+    printf '%s\n' "${default_branch}"
+    unset default_branch
+  else
+
+    printf 'error: \x60git default-branch\x60 must be run from within a '
+    printf 'Git repository\n'
+    return 1
+  fi
+  # undo `set -x` silently
+  { set +x; } 2>/dev/null
+}
+
+git_default_branch "${@}"
