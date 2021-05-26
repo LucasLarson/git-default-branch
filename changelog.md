@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/LucasLarson/git-default-branch/tree/HEAD)
+
+[Full Changelog](https://github.com/LucasLarson/git-default-branch/compare/v1.0.0...HEAD)
+
+**Merged pull requests:**
+
+- Update github/super-linter action to v4 [\#8](https://github.com/LucasLarson/git-default-branch/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v1.0.0](https://github.com/LucasLarson/git-default-branch/tree/v1.0.0) (2021-04-15)
 
 [Full Changelog](https://github.com/LucasLarson/git-default-branch/compare/c52cf7779939b916f1a21a628d40cb745a10401e...v1.0.0)
