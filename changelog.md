@@ -4,8 +4,13 @@
 
 [Full Changelog](https://github.com/LucasLarson/git-default-branch/compare/v1.0.0...HEAD)
 
+**Closed issues:**
+
+- `actions/setup-ruby` is deprecated [\#1](https://github.com/LucasLarson/git-default-branch/issues/1)
+
 **Merged pull requests:**
 
+- replace deprecated `actions/setup-ruby` with `ruby/setup-ruby` \(fix \#1\) [\#10](https://github.com/LucasLarson/git-default-branch/pull/10) ([LucasLarson](https://github.com/LucasLarson))
 - Update github/super-linter action to v4 [\#8](https://github.com/LucasLarson/git-default-branch/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [v1.0.0](https://github.com/LucasLarson/git-default-branch/tree/v1.0.0) (2021-04-15)
