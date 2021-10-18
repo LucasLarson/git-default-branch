@@ -4,6 +4,11 @@
 
 [Full Changelog](https://github.com/LucasLarson/git-default-branch/compare/v1.0.0...HEAD)
 
+**Implemented enhancements:**
+
+- remove check for whether called from within a Git repository [\#11](https://github.com/LucasLarson/git-default-branch/issues/11)
+- remove check for whether called from within a repository \(fix \#11\) [\#13](https://github.com/LucasLarson/git-default-branch/pull/13) ([LucasLarson](https://github.com/LucasLarson))
+
 **Closed issues:**
 
 - `actions/setup-ruby` is deprecated [\#1](https://github.com/LucasLarson/git-default-branch/issues/1)
