@@ -10,8 +10,8 @@ Affero General Public License v3.0 or later"]]
 
 What
 ~~~~
-During the course of versioning software history, a myriad of names have been
-used as the default for the chief branch, including `trunk`, `development`,
+During the course of versioning software history, myriad names have been used
+as the default for the chief branch, including `trunk`, `development`,
 `develop`, `dev`, `master`, `main`, `mainline`, `baseline`, and sometimes even
 `default`.
 
