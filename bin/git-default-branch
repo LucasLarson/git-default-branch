@@ -16,7 +16,7 @@ git_default_branch() {
   # https://stackoverflow.com/a/44750379
   if git symbolic-ref refs/remotes/origin/HEAD >/dev/null 2>&1; then
     default_branch=$(git symbolic-ref refs/remotes/origin/HEAD |
-      sed 's@^refs/remotes/origin/@@')
+      sed 's|^refs/remotes/origin/||')
 
   # check for `main`, which, if it exists, is most likely to be default
   elif [ -n "$(git branch --list main)" ]; then
