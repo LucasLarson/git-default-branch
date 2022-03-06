@@ -6,6 +6,8 @@
 
 **Implemented enhancements:**
 
+- use long flags when scripting [\#21](https://github.com/LucasLarson/git-default-branch/issues/21)
+- commands not prepended by `command` can produce unexpected behavior [\#17](https://github.com/LucasLarson/git-default-branch/issues/17)
 - `sed 's@` is not as legible as `sed 's/` or `sed 's|` [\#16](https://github.com/LucasLarson/git-default-branch/issues/16)
 - prefer a `case` statement instead of multiple `[`-tests on argument `$1` [\#15](https://github.com/LucasLarson/git-default-branch/issues/15)
 - English usage: prefer the adjectival “myriad” [\#14](https://github.com/LucasLarson/git-default-branch/issues/14)
@@ -21,6 +23,7 @@
 
 **Merged pull requests:**
 
+- use long flags when scripting \(fix \#21\) [\#23](https://github.com/LucasLarson/git-default-branch/pull/23) ([LucasLarson](https://github.com/LucasLarson))
 - bump actions/checkout from v2 to v3 [\#22](https://github.com/LucasLarson/git-default-branch/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - replace deprecated `actions/setup-ruby` with `ruby/setup-ruby` \(fix \#1\) [\#10](https://github.com/LucasLarson/git-default-branch/pull/10) ([LucasLarson](https://github.com/LucasLarson))
 - Update github/super-linter action to v4 [\#8](https://github.com/LucasLarson/git-default-branch/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
