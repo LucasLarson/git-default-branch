@@ -11,7 +11,7 @@
 git_default_branch() {
   case "${1-}" in
   -v | --verbose)
-    set -x
+    set -o xtrace
     shift
     ;;
 
@@ -43,7 +43,7 @@ git_default_branch() {
     unset default_branch
 
     # undo `set -x` silently
-    { set +x; } 2>/dev/null
+    { set +o xtrace; } 2>/dev/null
     ;;
   esac
 }
