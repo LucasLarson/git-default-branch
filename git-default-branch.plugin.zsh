@@ -7,7 +7,7 @@
 #     URL: https://github.com/LucasLarson/git-default-branch
 #     license: GNU Affero General Public License v3.0 or later
 #
-PATH=${PATH}:$(dirname "${0}")/bin
+PATH=${PATH}:$(command dirname "${0}")/bin
 export PATH
 
 alias gmb=git-default-branch
