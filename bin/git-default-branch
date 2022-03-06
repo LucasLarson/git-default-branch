@@ -20,16 +20,18 @@ git_default_branch() {
     # if so, then use that name for `default_branch`
     # https://stackoverflow.com/a/44750379
     if command git symbolic-ref refs/remotes/origin/HEAD >/dev/null 2>&1; then
-      default_branch=$(command git symbolic-ref refs/remotes/origin/HEAD |
-        command sed 's|^refs/remotes/origin/||')
+      default_branch="$(
+        command git symbolic-ref refs/remotes/origin/HEAD |
+        command sed 's|^refs/remotes/origin/||'
+      )"
 
     # check for `main`, which, if it exists, is most likely to be default
-    elif test -n "$(command git branch --list main)"; then
-      default_branch=main
+    elif test -n "$(command git branch --list 'main')"; then
+      default_branch='main'
 
     # check for a branch called `master`
-    elif test -n "$(command git branch --list master)"; then
-      default_branch=master
+    elif test -n "$(command git branch --list 'master')"; then
+      default_branch='master'
 
     else
       # fail with explanation
