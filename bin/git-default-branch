@@ -24,11 +24,11 @@ git_default_branch() {
         command sed 's|^refs/remotes/origin/||')
 
     # check for `main`, which, if it exists, is most likely to be default
-    elif [ -n "$(command git branch --list main)" ]; then
+    elif test -n "$(command git branch --list main)"; then
       default_branch=main
 
     # check for a branch called `master`
-    elif [ -n "$(command git branch --list master)" ]; then
+    elif test -n "$(command git branch --list master)"; then
       default_branch=master
 
     else
