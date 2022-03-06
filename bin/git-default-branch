@@ -26,11 +26,11 @@ git_default_branch() {
       )"
 
     # check for `main`, which, if it exists, is most likely to be default
-    elif test -n "$(command git branch --list 'main')"; then
+    elif test -n "$(command git branch --list -- 'main')"; then
       default_branch='main'
 
     # check for a branch called `master`
-    elif test -n "$(command git branch --list 'master')"; then
+    elif test -n "$(command git branch --list -- 'master')"; then
       default_branch='master'
 
     else
@@ -42,7 +42,7 @@ git_default_branch() {
 
     # return the result
     printf '%s\n' "${default_branch}"
-    unset default_branch
+    unset -- default_branch
 
     # undo `set -x` silently
     { set +o xtrace; } 2>/dev/null
