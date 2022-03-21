@@ -23,6 +23,7 @@
 
 **Merged pull requests:**
 
+- bump `actions/cache` action from v2 to v3 [\#24](https://github.com/LucasLarson/git-default-branch/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
 - use long flags when scripting \(fix \#21\) [\#23](https://github.com/LucasLarson/git-default-branch/pull/23) ([LucasLarson](https://github.com/LucasLarson))
 - bump actions/checkout from v2 to v3 [\#22](https://github.com/LucasLarson/git-default-branch/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - replace deprecated `actions/setup-ruby` with `ruby/setup-ruby` \(fix \#1\) [\#10](https://github.com/LucasLarson/git-default-branch/pull/10) ([LucasLarson](https://github.com/LucasLarson))
