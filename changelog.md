@@ -17,12 +17,17 @@
 - repair English usage \(fix \#14\) [\#18](https://github.com/LucasLarson/git-default-branch/pull/18) ([LucasLarson](https://github.com/LucasLarson))
 - remove check for whether called from within a repository \(fix \#11\) [\#13](https://github.com/LucasLarson/git-default-branch/pull/13) ([LucasLarson](https://github.com/LucasLarson))
 
+**Fixed bugs:**
+
+- `git.io` deprecation [\#26](https://github.com/LucasLarson/git-default-branch/issues/26)
+
 **Closed issues:**
 
 - `actions/setup-ruby` is deprecated [\#1](https://github.com/LucasLarson/git-default-branch/issues/1)
 
 **Merged pull requests:**
 
+- remove `git.io` links \(fix \#26\) [\#27](https://github.com/LucasLarson/git-default-branch/pull/27) ([LucasLarson](https://github.com/LucasLarson))
 - bump `actions/cache` action from v2 to v3 [\#24](https://github.com/LucasLarson/git-default-branch/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
 - use long flags when scripting \(fix \#21\) [\#23](https://github.com/LucasLarson/git-default-branch/pull/23) ([LucasLarson](https://github.com/LucasLarson))
 - bump actions/checkout from v2 to v3 [\#22](https://github.com/LucasLarson/git-default-branch/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
