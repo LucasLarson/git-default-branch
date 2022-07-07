@@ -33,9 +33,15 @@ git_default_branch() {
     elif test -n "$(command git branch --list -- 'master')"; then
       default_branch='master'
 
+    # check for a branch called `trunk` (Subversion)
+    # https://web.archive.org/web/20220121194601/developer.ibm.com/?p=231875
+    elif test -n "$(command git branch --list -- 'trunk')"; then
+      default_branch='trunk'
+
     else
       # fail with explanation
-      printf 'unable to detect a \x60main\x60, \x60master\x60, or default '
+      printf 'unable to detect a\n'
+      printf '\x60main\x60, \x60master\x60, \x60trunk\x60, or default\n'
       printf 'branch in this repository\n'
       return 2
     fi
