@@ -38,6 +38,10 @@ git_default_branch() {
     elif test -n "$(command git branch --list -- 'trunk')"; then
       default_branch='trunk'
 
+    # check for a branch called `HEAD` (CVS)
+    elif test -n "$(command git branch --list -- 'HEAD')"; then
+      default_branch='HEAD'
+
     else
       # fail with explanation
       printf 'unable to detect a\n'
