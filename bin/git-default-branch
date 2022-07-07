@@ -29,7 +29,7 @@ git_default_branch() {
     elif test -n "$(command git branch --list -- 'main')"; then
       default_branch='main'
 
-    # check for a branch called `master`
+    # check for a branch called `master` (prepan Git)
     elif test -n "$(command git branch --list -- 'master')"; then
       default_branch='master'
 
