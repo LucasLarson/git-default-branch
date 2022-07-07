@@ -2,12 +2,12 @@
 #
 #     git default-branch
 #     🌳  What’s in a name? It doesn’t matter.
+#     Return the name of a repository’s default branch
 #
 #     author: Lucas Larson
 #     URL: https://github.com/LucasLarson/git-default-branch
 #     license: GNU Affero General Public License v3.0 or later
 #
-# return the name of a repository’s default branch
 git_default_branch() {
   case "${1-}" in
   -v | --verbose)
