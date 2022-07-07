@@ -22,7 +22,7 @@ git_default_branch() {
     if command git symbolic-ref refs/remotes/origin/HEAD >/dev/null 2>&1; then
       default_branch="$(
         command git symbolic-ref refs/remotes/origin/HEAD |
-          command sed -e 's|refs/remotes/origin/||'
+          command sed -e 's/refs\/remotes\/origin\///'
       )"
 
     # check for `main`, which, if it exists, is most likely to be default
