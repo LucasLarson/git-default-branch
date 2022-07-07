@@ -41,7 +41,7 @@ git_default_branch() {
     else
       # fail with explanation
       printf 'unable to detect a\n'
-      printf '\x60main\x60, \x60master\x60, \x60trunk\x60, or default\n'
+      printf '\140main\140, \140master\140, \140trunk\140, or default\n'
       printf 'branch in this repository\n'
       return 2
     fi
