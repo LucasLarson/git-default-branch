@@ -3,7 +3,7 @@ git default-branch
 
 🌳 What’s in a name? It doesn’t matter.
 
-https://github.com/LucasLarson/git-default-branch/actions?query=workflow:Super-Linter[image:https://img.shields.io/github/workflow/status/LucasLarson/git-default-branch/Super-Linter?logo=GitHub&label=Super-Linter[GitHub
+https://github.com/LucasLarson/git-default-branch/actions?query=workflow:Super-Linter[image:https://github.com/LucasLarson/git-default-branch/workflows/Super-Linter/badge.svg[GitHub
 Super-Linter,title="GitHub Super-Linter status"]]
 https://github.com/LucasLarson/git-default-branch/blob/main/license.adoc[image:https://img.shields.io/badge/license-AGPL_3+-blue[AGPL,title="GNU
 Affero General Public License v3.0 or later"]]
