@@ -42,6 +42,13 @@ git_default_branch() {
     elif test -n "$(command git branch --list -- 'HEAD')"; then
       default_branch='HEAD'
 
+    # check for branches called `mainline`, `default`
+    # https://github.com/progit/progit2/commit/3680ec7865
+    elif test -n "$(command git branch --list -- 'mainline')"; then
+      default_branch='mainline'
+    elif test -n "$(command git branch --list -- 'default')"; then
+      default_branch='default'
+
     else
       # fail with explanation
       printf 'unable to detect a\n'
