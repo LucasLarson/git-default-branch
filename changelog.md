@@ -12,6 +12,7 @@
 - prefer a `case` statement instead of multiple `[`-tests on argument `$1` [\#15](https://github.com/LucasLarson/git-default-branch/issues/15)
 - English usage: prefer the adjectival “myriad” [\#14](https://github.com/LucasLarson/git-default-branch/issues/14)
 - remove check for whether called from within a Git repository [\#11](https://github.com/LucasLarson/git-default-branch/issues/11)
+- check also for `mainline`, `default` branches [\#28](https://github.com/LucasLarson/git-default-branch/pull/28) ([LucasLarson](https://github.com/LucasLarson))
 - replace `[ $1 = 𝑥 ]` with `case` statement \(fix \#15\) [\#20](https://github.com/LucasLarson/git-default-branch/pull/20) ([LucasLarson](https://github.com/LucasLarson))
 - make `sed` expression more legible \(fix \#16\) [\#19](https://github.com/LucasLarson/git-default-branch/pull/19) ([LucasLarson](https://github.com/LucasLarson))
 - repair English usage \(fix \#14\) [\#18](https://github.com/LucasLarson/git-default-branch/pull/18) ([LucasLarson](https://github.com/LucasLarson))
