@@ -28,6 +28,7 @@
 
 **Merged pull requests:**
 
+- bump github/super-linter from 4 to 5 [\#30](https://github.com/LucasLarson/git-default-branch/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
 - remove `git.io` links \(fix \#26\) [\#27](https://github.com/LucasLarson/git-default-branch/pull/27) ([LucasLarson](https://github.com/LucasLarson))
 - bump `actions/cache` action from v2 to v3 [\#24](https://github.com/LucasLarson/git-default-branch/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
 - use long flags when scripting \(fix \#21\) [\#23](https://github.com/LucasLarson/git-default-branch/pull/23) ([LucasLarson](https://github.com/LucasLarson))
