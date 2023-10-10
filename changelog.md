@@ -28,6 +28,7 @@
 
 **Merged pull requests:**
 
+- bump ad-m/github-push-action from v0.6.0 to v0.8.0 [\#33](https://github.com/LucasLarson/git-default-branch/pull/33) ([renovate[bot]](https://github.com/apps/renovate))
 - bump actions/checkout from 3 to 4 [\#31](https://github.com/LucasLarson/git-default-branch/pull/31) ([dependabot[bot]](https://github.com/apps/dependabot))
 - bump github/super-linter from 4 to 5 [\#30](https://github.com/LucasLarson/git-default-branch/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
 - remove `git.io` links \(fix \#26\) [\#27](https://github.com/LucasLarson/git-default-branch/pull/27) ([LucasLarson](https://github.com/LucasLarson))
