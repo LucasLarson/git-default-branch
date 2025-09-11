@@ -28,6 +28,7 @@
 
 **Merged pull requests:**
 
+- chore\(deps\): bump checkout from v4 to v5 [\#37](https://github.com/LucasLarson/git-default-branch/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
 - chore\(deps\): bump super-linter from v5 to v7 [\#36](https://github.com/LucasLarson/git-default-branch/pull/36) ([renovate[bot]](https://github.com/apps/renovate))
 - bump ad-m/github-push-action from v0.6.0 to v0.8.0 [\#33](https://github.com/LucasLarson/git-default-branch/pull/33) ([renovate[bot]](https://github.com/apps/renovate))
 - bump actions/checkout from 3 to 4 [\#31](https://github.com/LucasLarson/git-default-branch/pull/31) ([dependabot[bot]](https://github.com/apps/dependabot))
